@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        background-color: #e5e5e5;
+        color: #2b2a29;
+        line-height: 1.4rem;
+      }
+
+      .mb {
+        margin-bottom: 1rem;
+      }
+
+      .top-green {
+        padding-top: 50px;
+        text-align: center;
+        background-color: #27ae60;
+        min-height: 300px;
+      }
+      h2 {
+        color: white;
+        margin-top: 1rem;
+      }
+      .box {
+        border-radius: 10px;
+        background-color: white;
+        padding: 1.5rem 1rem;
+
+        position: absolute;
+        top: 240px;
+        left: 5%;
+        right: 5%;
+      }
+
+      .welcome {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .line {
+        background-color: #e6e6e6;
+        height: 1px;
+        width: 100%;
+
+        margin: 1rem 0;
+      }
+      .footer {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+      }
+      .w600 {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      .w700 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      .green {
+          color: #27AE60;
+      }
+
+      .card {
+          display: flex;
+          margin: 0.5rem 0;
+      }
+
+      .img-box {
+          min-width: 100px;
+          margin-right: 1rem;
+      }
+
+      .img-box img {
+          width: 100%;
+          object-fit: cover;
+      }
+
+      .col {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          font-size: 1rem;
+      }
+
+      @media screen and (max-width: 1050px) {
+        html {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        html {
+          font-size: 12px;
+        }
+
+        .img-box {
+          min-width: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="top-green">
+        <img src="icon.png" alt="icon" />
+        <h2>Здравствуйте!</h2>
+      </div>
+
+      <div class="box">
+        <p class="welcome"
+          >Иван Иванов, благодарим Вас за оформление заказа на нашем сайте
+        <span class="green">
+            alelmarket.kz
+        </span></p>
+        <p class="mb">Ниже, предоставляем Вам информацию о заказе №234:</p>
+        <p>Контактная информация:</p>
+        <p class="w700"">Иван</p>
+        <p class="mb w700">+7(701) 647 38 09</p>
+        <p>Доставка по адресу:</p>
+        <p class="mb w700">Шевченко 165Б, 1009 офис, 10 этаж</p>
+        <p>Дата и время доставки:</p>
+        <p class="mb w700">25 июля 2021, 14:00-17:00</p>
+        <p>Продукты:</p>
+        <!-- DYNAMIC CARDS -->
+        <div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="zakaz.png" alt="zakas">
+                </div>
+                <div class="col">
+                    <p class="w700">Куриное бедро (0,7 кг)</p>
+                    <p>1 шт.</p>
+                    <p class="w700">1290 ₸</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="row">
+          <span>Доставка:</span>
+          <span class="w600">600 ₸</span>
+        </div>
+        <div class="row">
+          <span>Итого:</span>
+          <span class="w600">600 ₸</span>
+        </div>
+        <div class="row">
+          <span>Метод оплаты:</span>
+          <span class="w600">Картой онлайн</span>
+        </div>
+        <p class="footer">
+          С уважением!<br />
+          Команда АО "Алель Агро"
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
