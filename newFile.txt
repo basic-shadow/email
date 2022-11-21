@@ -1,5 +1,3 @@
 newFunction() {
-    print('message');
-
-    print('prev print');
+    
 }
